@@ -19,11 +19,21 @@ begin
                     write('*')
             else if (i = 1) and (j =22) then
                 write(title)
-            else if (j = 1) or (j = height )  and (i <> 1) and (i <> width ) then
+            else if ((j = 1) or (j = height ))  and (i <> 1) and (i <> width ) then
                     write('*')
             else if (j = 41) and (i <> 1) and (i <> height) then
                     write('|')
-            else if (j = rocket_left) and (i <> 1) then
+            else if (i = 12) and (j = 2) then
+                         write('|')
+            else if (i = 13) and (j = 2) then
+                    write('|')
+            else if (i = 11) and (j = 2) then
+                    write('|')
+            else if (i = 11) and (j = 80) then
+                    write('|')
+            else if (i = 12) and (j = 80) then
+                    write('|')
+            else if (i = 13) and (j = 80) then
                     write('|')
             else
                 write(' ');
