@@ -1,5 +1,7 @@
-program pin_pong;
+
+program ping_pong;
 uses
+
         Crt;
 const
         title = 'Ping Pong with Free Pascal';
@@ -8,8 +10,10 @@ const
         rocket_left = 2;
         rocket_right = 24;
 var
+        symbol : char;
         i, j  : integer;
 begin
+        while symbol <> 'q' do begin
         ClrScr;
     for i := 1 to width do
     begin
@@ -39,5 +43,7 @@ begin
                 write(' ');
             end;
             writeln('');
-    end
+    end;
+    readln(symbol);
+  end;
 end.
